@@ -103,44 +103,6 @@ The frontend will run on `http://localhost:3000`
 - `GET /api/swap-requests/incoming` - Get incoming swap requests
 - `GET /api/swap-requests/outgoing` - Get outgoing swap requests
 
-## Project Structure
-
-```
-ServiceHive/
-├── backend/
-│   ├── config/
-│   │   └── db.js              # MongoDB connection
-│   ├── middleware/
-│   │   └── auth.js            # JWT authentication middleware
-│   ├── models/
-│   │   ├── User.js            # User model
-│   │   ├── Event.js           # Event/Slot model
-│   │   └── SwapRequest.js     # SwapRequest model
-│   ├── routes/
-│   │   ├── authRoutes.js      # Authentication routes
-│   │   ├── eventRoutes.js     # Event CRUD routes
-│   │   └── swapRoutes.js      # Swap logic routes
-│   ├── server.js              # Express server
-│   └── package.json
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   └── Navbar.jsx     # Navigation component
-│   │   ├── pages/
-│   │   │   ├── Login.jsx      # Login page
-│   │   │   ├── Signup.jsx     # Signup page
-│   │   │   ├── Dashboard.jsx  # Calendar/Dashboard page
-│   │   │   ├── Marketplace.jsx # Marketplace page
-│   │   │   └── Notifications.jsx # Notifications page
-│   │   ├── context/
-│   │   │   └── AuthContext.jsx # Auth context
-│   │   ├── utils/
-│   │   │   └── api.js         # Axios configuration
-│   │   ├── App.jsx            # Main app component
-│   │   └── main.jsx           # Entry point
-│   └── package.json
-└── README.md
-```
 
 ## Usage
 
@@ -165,7 +127,4 @@ For development with auto-reload:
 - Backend: `npm run dev` (uses nodemon)
 - Frontend: `npm run dev` (uses Vite)
 
-## License
-
-This project is created for the ServiceHive assignment.
 
